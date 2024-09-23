@@ -13,6 +13,9 @@ const DetailsProduct = () => {
   }, [productId]);
   return (
     <>
+    <div className="text-center p-3 bg-danger-subtle rounded-3">
+      <h1>Deatils Of Product : "{product.name}"</h1>
+    </div>
       <div className="card h-100 w-auto" style={{ width: "18rem" }}>
         <img
           src={product.image}

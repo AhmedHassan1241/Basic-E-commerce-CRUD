@@ -34,7 +34,11 @@ function EditProduct() {
   };
 
   return (
-    <div className="w-50 mx-auto mt-3">
+    <>
+    <div className="text-center p-3 bg-danger-subtle rounded-3">
+    <h1>Edit Product : "{product.name}"</h1>
+    </div>
+    <div className="w-50 mx-auto mt-3"> 
       <form onSubmit={formSubmit}>
         <div className="mb-3">
           <label htmlFor="productID" className="form-label">
@@ -143,7 +147,8 @@ function EditProduct() {
           <input
             value={product.colors}
             onChange={(e) => {
-                const colorString=e.target.value;
+                const colorString=e.target.value
+                ;
                 const colorsArray= colorString.split(",")
               setProduct({ ...product, colors: colorsArray });
             }}
@@ -186,6 +191,7 @@ function EditProduct() {
         </button>
       </form>
     </div>
+    </>
   );
 }
 

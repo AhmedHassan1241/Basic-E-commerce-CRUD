@@ -9,7 +9,7 @@ const Side = () => {
             <Link to='/products'>Get All Product</Link>
         </li>
         <li>
-            <a href='#.'>Get All Categories</a>
+            <Link to='/categories'>Get All Categories</Link>
         </li>
      </ul> 
     </>

@@ -1,0 +1,8 @@
+npx json-server db.json --port 9000
+
+
+
+to run on another port //9000 on CMD
+**********
+E:\React\learningReact\basic-crud\src\Product API>json-server --watch db.json --port 9000
+**********

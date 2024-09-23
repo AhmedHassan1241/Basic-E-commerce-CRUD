@@ -10,6 +10,7 @@ function AddProduct() {
     image: "wwww",
     description: "",
     category: "",
+    categoryId:"",
     sizes: 0,
     colors: "Red",
     rating: 4.8,
@@ -24,6 +25,7 @@ function AddProduct() {
         image: product.image,
         description: product.description,
         category: product.category,
+        categoryId:product.categoryId,
         sizes: product.sizes,
         colors: product.categoryo,
         rating: product.rating,
@@ -113,6 +115,19 @@ function AddProduct() {
             type="text"
             className="form-control"
             id="productCat"
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="productCatID" className="form-label">
+            Product CategoryID
+          </label>
+          <input
+            onChange={(e) => {
+              setProduct({ ...product, categoryId: e.target.value });
+            }}
+            type="text"
+            className="form-control"
+            id="productCatID"
           />
         </div>
         <div className="mb-3">
